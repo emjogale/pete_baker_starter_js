@@ -1,5 +1,3 @@
-function cakes(recipe, ingredients) {
-	return 0;
-}
+function cakes(recipe, ingredients) {}
 
 module.exports = cakes;
