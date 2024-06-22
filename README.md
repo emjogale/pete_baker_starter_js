@@ -20,23 +20,17 @@ Examples:
 
 ## How to set up the project
 
-1. Create a new repo in TRW github, making sure to check 'Add a README file' and then in your terminal:
-    - `git clone <repo name>` (to clone a local version of the project)
-    - `npm init -y` (to generate package.json)
-    - `npm install jest` (to install the Jest testing framework)
-    - in package.json under "scripts" set "test": "jest"
-1. Create the basic files for the project:
+-   Note only one group member needs to set up the project
 
-    - baker.js
-    - baker.test.js
+1. Clone this repo from the TRW github into a project name of your choice
+    - `git clone <this-repo-url> <your-project-name>`
+2. Run npm install (you will need to have node installed on your machine)
 
-1. If you are completely new to testing (or to Jest) it is a good idea at this point to go to the Jest docs here: [Getting started](https://jestjs.io/docs/getting-started) and use their 'sum' example just to check everything is working as it should and to look at the syntax it uses. (Note you will need to change the require filename in your test file to be 'baker').
+3. If you are completely new to testing (or to Jest) it is a good idea at this point to go to the Jest docs here: [Getting started](https://jestjs.io/docs/getting-started) and use their 'sum' example just to check everything is working as it should and to look at the syntax it uses. (This example is shown in these starter files).
 
-1. Run `npm test` and look at the printout in the terminal. If the test passes it will be green. Yeay all set up correctly.
+4. Run `npm test` and look at the printout in the terminal. (Note that the tests will be detected automatically if the files are named with the test.js extension). If the test passes it will be green and ecerythign has been set up correctly.
 
-1. Add a .gitignore to the project at this point and and specify `node_modules/` in it.
-
-1. Add a link to the kata in the project's README.md file. This helps for reference when working through the kata.
+5. Uncomment the second test, which will fail, and update the cake function so it passes. Repeat writing tests which fail and then write code to make them pass until all facets of the functionality you are trying to achieve have passing tests.
 
 ## The stages of testing
 
