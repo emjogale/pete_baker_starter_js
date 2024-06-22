@@ -20,30 +20,34 @@ Examples:
 
 ## How to set up the project
 
--   Note only one group member needs to set up the project
+-   Note only one group member needs to set up the project.
 
-1. Clone this repo from the TRW github into a project name of your choice
+1. Clone this repo from the TRW github into a new project with a name of your choice
+
     - `git clone <this-repo-url> <your-project-name>`
+
 2. Run npm install (you will need to have node installed on your machine)
 
 3. If you are completely new to testing (or to Jest) it is a good idea at this point to go to the Jest docs here: [Getting started](https://jestjs.io/docs/getting-started) and use their 'sum' example just to check everything is working as it should and to look at the syntax it uses. (This example is shown in these starter files).
 
-4. Run `npm test` and look at the printout in the terminal. (Note that the tests will be detected automatically if the files are named with the test.js extension). If the test passes it will be green and ecerythign has been set up correctly.
+4. Run `npm test` and look at the printout in the terminal. (Note that the tests will be detected automatically if the files are named with the test.js extension). Using this starter code, if everything has been set up correctly the set up 'sum' test should pass - with a green printout, but the first 'baker' test will fail with red printout. Update the code in baker.js so the test passes. Run `npm test` again and both tests should show a green printout.
 
-5. Uncomment the second test, which will fail, and update the cake function so it passes. Repeat writing tests which fail and then write code to make them pass until all facets of the functionality you are trying to achieve have passing tests.
+5. In green phase add, commit and push the code to github. At this stage the next person can take over as driver (they will need to clone the new project and run npm install)
+
+6. Uncomment the second test, which will fail, and update the cake function so it passes. Repeat writing tests which fail and then write code to make them pass until all facets of the functionality you are trying to achieve have passing tests.
 
 ## The stages of testing
 
 1. **Red phase**
 
-    Use the instructions in the Kata as a set of steps which all require a test.
-    It is important to name the test well as it will serve as a description of the functionality that is being tested. For example the cakes function 'should return 0 if any ingredients in recipe are not available'. This will appear in the terminal printout when the tests are run and will explain what the production code actually does.
+    Use the instructions in the Kata as a set of steps which all require a test, implemented one at a time.
+    It is important to name the test well as it will serve as a description of the functionality that is being tested. The first test in our example is: _cakes function 'should return 0 if any ingredients in recipe are not available'_. This will appear in the terminal printout when the tests are run alongside the result of the test. If the test has been name well it will explain what the production code actually does.
 
-    Now run `npm test` . The test will fail, the 'red' phase. This is because we have not yet defined the function cakes.
+    Now run `npm test` . The test will fail, the 'red' phase.
 
 2. **Green phase**
 
-    Define the function in baker.js and export it. At this stage you can hard code the required outcome or the simplest way to achieve the desired outcome. Run `npm test` again. Test will pass, the 'green' phase.
+    Add the minimum code to achieve the desired outcome (for example in this case cakes could simply return 0). Run `npm test` again. Test will pass, the 'green' phase.
 
 3. **Refactor phase**
 
